@@ -23,10 +23,13 @@ public class CalcolaBiglietto {
 			
 			finalPrice -= finalPrice / 100 * 40;
 			
+		} else if (userAge < 12) {
+			
+			finalPrice = 0;
+			
 		} else if (userAge < 18) {
 			
 			finalPrice -= finalPrice / 100 * 20;
-			
 		}
 		
 		System.out.println("KM " + kmToDo);
